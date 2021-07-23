@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import OperationQueueManager
 
 /**
  多线程开发时容易发生的一些问题:
@@ -20,10 +21,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        createQueue()
+//        createQueue()
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //主线程中执行
+//        operationMainQueue()
+        
+        //异步线程中执行
+//        operation()
+        
+        //创建队列及异步线程并添加依赖
+        addDependency()
+    }
+        
     /**
      串行队列和并发队列。都符号FIFO(先进先出)原则
      * 串行队列(Serial Dispatch Queue):

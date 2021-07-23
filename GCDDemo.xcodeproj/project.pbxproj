@@ -18,6 +18,8 @@
 		3D0B592622DF1A3E008CA63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B592422DF1A3E008CA63C /* Main.storyboard */; };
 		3D0B592822DF1A40008CA63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B592722DF1A40008CA63C /* Assets.xcassets */; };
 		3D0B592B22DF1A40008CA63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0B592922DF1A40008CA63C /* LaunchScreen.storyboard */; };
+		3D2C162226A80D7600430344 /* OperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C162126A80D7600430344 /* OperationQueueManager.m */; };
+		3D2C162426AA934700430344 /* OperationQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C162326AA934700430344 /* OperationQueueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		3D0B592722DF1A40008CA63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D0B592A22DF1A40008CA63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D0B592C22DF1A40008CA63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2C162026A80D7600430344 /* OperationQueueManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationQueueManager.h; sourceTree = "<group>"; };
+		3D2C162126A80D7600430344 /* OperationQueueManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationQueueManager.m; sourceTree = "<group>"; };
+		3D2C162326AA934700430344 /* OperationQueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,8 @@
 				3D0B590F22DF1A19008CA63C /* LaunchScreen.storyboard */,
 				3D0B591222DF1A19008CA63C /* Info.plist */,
 				3D0B591322DF1A19008CA63C /* main.m */,
+				3D2C162026A80D7600430344 /* OperationQueueManager.h */,
+				3D2C162126A80D7600430344 /* OperationQueueManager.m */,
 			);
 			path = GCDDemo;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 				3D0B592722DF1A40008CA63C /* Assets.xcassets */,
 				3D0B592922DF1A40008CA63C /* LaunchScreen.storyboard */,
 				3D0B592C22DF1A40008CA63C /* Info.plist */,
+				3D2C162326AA934700430344 /* OperationQueueManager.swift */,
 			);
 			path = "GCDDemo-Swfit";
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 				3D0B590922DF1A16008CA63C /* ViewController.m in Sources */,
 				3D0B591422DF1A19008CA63C /* main.m in Sources */,
 				3D0B590622DF1A16008CA63C /* AppDelegate.m in Sources */,
+				3D2C162226A80D7600430344 /* OperationQueueManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +228,7 @@
 			files = (
 				3D0B592322DF1A3E008CA63C /* ViewController.swift in Sources */,
 				3D0B592122DF1A3E008CA63C /* AppDelegate.swift in Sources */,
+				3D2C162426AA934700430344 /* OperationQueueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

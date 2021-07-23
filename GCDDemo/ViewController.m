@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "OperationQueueManager.h"
 
 @interface ViewController ()
 
@@ -32,7 +32,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self createQueue];
+//    [self createQueue];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self createOperation];
+}
+
+- (void)createOperation
+{
+    OperationQueueManager *OQM = [[OperationQueueManager alloc] init];
+    
+    //主线程中执行代码
+//    [OQM operationMainQueue];
+    
+    //创建队列及异步线程并添加依赖
+//    [OQM addDependency];
+    
+    //异步线程
+//    [OQM operation];
+   
+    //阻塞线程
+    [OQM waitOperation];
 }
 
 /**

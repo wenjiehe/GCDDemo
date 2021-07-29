@@ -32,7 +32,10 @@ class ViewController: UIViewController {
 //        operation()
         
         //创建队列及异步线程并添加依赖
-        addDependency()
+//        addDependency()
+        
+        
+        waitOperation()
     }
         
     /**

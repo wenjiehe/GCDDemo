@@ -86,3 +86,32 @@ func addDependency() -> Void {
     operationQueue.addOperation(operation8)
     
 }
+
+func waitOperation(){
+    let operationQueue = OperationQueue.init()
+
+    let operation1 = BlockOperation.init {
+        print("1 async---\(Thread.current)")
+    }
+    
+    let operation2 = BlockOperation.init {
+        print("2 async---\(Thread.current)")
+    }
+
+    let operation3 = BlockOperation.init {
+        print("3 async---\(Thread.current)")
+    }
+
+    let operation4 = BlockOperation.init {
+        print("4 async---\(Thread.current)")
+    }
+    
+    //线程2、3先运行，4、1线程并发
+    
+    operationQueue.addOperations([operation2, operation3], waitUntilFinished: true)
+    operationQueue.addOperation(operation4)
+    operationQueue.addOperation(operation1)
+    
+    print("8888888")
+
+}

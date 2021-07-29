@@ -105,7 +105,7 @@
         NSLog(@"4 %s,currentThread = %@ \nend", __FUNCTION__, NSThread.currentThread); //打印当前线程
     }];
 
-    //如果设置waitUntilFinished为YES，那么线程2、3、4转为同步队列
+    //如果设置waitUntilFinished为YES，那么线程2、3、4（并发）先运行，主线程中的"8888888"会等待2、3、4运行完再执行
     [operationQueue addOperation:operation4];
     [operationQueue addOperations:@[operation2, operation3] waitUntilFinished:YES];
     [operationQueue addOperation:operation1]; //异步调用
